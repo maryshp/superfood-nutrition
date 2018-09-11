@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SFNutrition</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <script src="js/tabs.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/jquery-1.js"></script>
+</head>
+<body id="page1">
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function($){
+
+        $('<style>'+
+
+            '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+
+            'bottom:0px; left:95%; width:60px; height:65px;'+
+
+            'background:url("image/scrol.png") 0 0 no-repeat; }' +
+
+            '.scrollTop:hover{ background-position:0 -70px;}'
+
+            +'</style>').appendTo('body');
+
+        var
+
+            speed = 550,
+
+            $scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');
+
+        $scrollTop.click(function(e){
+
+            e.preventDefault();
+
+            $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+
+        });
+
+//появление
+
+        function show_scrollTop(){
+
+            ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+
+        }
+
+        $(window).scroll( function(){ show_scrollTop(); } );
+
+        show_scrollTop();
+
+    });
+
+</script>
+
+<div class="tophead" >
+    <span itemprop="telephone" ><div class="phone-icon-wrapper"><img class="phone-icon icon-velcom" src="image/velcom.svg"></div><div class="phone-icon-wrapper"><img class="phone-icon icon-mts" src="image/mts.svg"></div>
+    <div class="phone"><div class="btn-wrap-phone"><a href="tel:7776655" rel="nofollow"><strong>777-66-55</strong></a></div></div>    </span>
+    <div class="call"><div class="btn-wrap-call"> <span class="buttoncall"> <a href="constraction.html"><strong>Call Back</strong></a> </span></div></div>
+    <div class="wrap">
+        <p class="thumb2"><img src="image/shop.png"> <img src="image/account.png"></p>
+    </div>
+</div>
+</div>
+<div class="bg">
+    <div class="header">
+        <div class="menu1">
+            <div class="main">
+                <div class="nav">
+                    <ul class="menu wrapper">
+                        <li><a class="active" href="index1.html">Home Page</a></li>
+                        <li><a href="constraction.html">Nutrition</a></li>
+                        <li><a href="constraction.html">Programs</a></li>
+                        <li><a href="constraction.html">Order&Delivery</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="wrapper p3">
+                <h1><a href="index.html">SF Nutrition</a></h1>
+                <form id="search-form">
+                    <fieldset>
+                        <div class="search-field">
+                            <input name="search" type="text" value="Search" />
+                            <a class="search-button" href="constraction.html"></a> </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <ul class="tabs">
+            <li><a href="#tab1">Best Diet Advices</a></li>
+            <li><a href="#tab2">Exercise &amp; Physical Fitness</a></li>
+            <li><a href="#tab3">Weight Loss Programs</a></li>
+        </ul>
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
+                <div class="main">
+                    <div class="wrapper">
+                        <figure class="img-indent-r"><img src="image/img1.jpg" alt=""></figure>
+                        <div class="extra-wrap">
+                            <div class="indent"> <strong class="title">Best</strong>
+                                <p class="p5">Diet Advice You've<br>
+                                    Never Heard Before</p>
+                                <div class="btn-wrap"> <span class="button"> <a href="constraction.html"><strong>Read More</strong></a> </span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab_content">
+                <div class="main">
+                    <div class="wrapper">
+                        <figure class="img-indent-r"><img src="image/yoga.jpg" alt=""></figure>
+                        <div class="extra-wrap">
+                            <div class="indent"> <strong class="title">Exercise</strong>
+                                <p class="p5">And Physical<br>
+                                    Fitness</p>
+                                <div class="btn-wrap"> <span class="button"> <a href="constraction.html"><strong>Read More</strong></a> </span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tab_content">
+                <div class="main">
+                    <div class="wrapper">
+                        <figure class="img-indent-r"><img src="image/page1-img3.jpg" alt=""></figure>
+                        <div class="extra-wrap">
+                            <div class="indent"> <strong class="title">Modern</strong>
+                                <p class="p5">Weight Loss<br>
+                                    Programs</p>
+                                <div class="btn-wrap"> <span class="button"> <a href="constraction.html"><strong>Read More</strong></a> </span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--==============================content================================-->
+    <div class="content">
+        <div class="main">
+            <div class="container_12">
+                <div class="wrapper img-indent-bot">
+                    <article class="grid_4">
+                        <h2>Weight-Loss Basics</h2>
+                        <ul class="list-1">
+                            <li><a href="constraction.html">Count Calories</a></li>
+                            <li><a href="constraction.html">Weight Loss Basics</a></li>
+                            <li><a href="constraction.html">Healthy Eating</a></li>
+                            <li><a href="constraction.html">Eating Out</a></li>
+                            <li><a href="constraction.html">Nutrition</a></li>
+                            <li><a href="constraction.html">About Diets</a></li>
+                            <li><a href="constraction.html">Emotional Eating</a></li>
+                            <li><a href="constraction.html">Exercise for Weight Loss</a></li>
+                            <li><a href="constraction.html">Obesity &amp; Health</a></li>
+                        </ul>
+                    </article>
+                    <article class="grid_8">
+                        <h2>Welcome to SuperFood Nutrition!</h2>
+                        <div class="wrapper prev-indent-bot">
+                            <figure class="img-indent2"><img src="image/p1lf.jpg" alt=""></figure>
+                            <h6>SuperFood Nutrition is one of the most famous fitness and nutrition shops. </h6>
+                            SF Nutrition specializes in creating fitness programs and nutrition systems that are sold all over the world to people wishing to become better. </div>
+                        <p class="prev-indent-bot"> You can buy different fitness programs, nutrition systems and find a lot of other information on our web-site.</p>
+                        <a class="button-2" href="constraction.html">Read More</a> </article>
+                </div>
+            </div>
+
+
+
+            <div class="product">
+                <a href="constraction.html">
+                    <p class="thumb"><img src="image/food1.png" alt="111"></p>
+                    <span>Food <br> Delicious products<br> with a good composition</span>
+                </a>
+            </div>
+            <div class="product2">
+                <a href="constraction.html">
+                    <p class="thumb"> <img src="image/dietplan1.jpg" alt="222"></p>
+                    <span>Nutrition systems<br>Only natural ingredients</span>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="textf"> <span>FOOD <br> <a href="constraction.html"> Nutrition programs </a> | <a href="constraction.html"> Smoothies </a> | <a href="constraction.html">Juices</a>  | <a href="constraction.html"> Sweets </a> </span></div>
+           <div class="content2">
+            <img src="image/1.jpg"><img src="image/2.jpg"> <img src="image/11.jpg"><img src="image/3.jpg"> <img src="image/5.jpg"><img src="image/10.jpg"><img src="image/9.jpg"><img src="image/8.jpg">
+            <div class="clr"> </div>
+       </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer2">
+            <table width="100%">
+                <tr valign="top">
+                    <td> <h3> Address</h3>
+                        <p>USA 8901 Marmora Road, Glasgow</p></td>
+                    <td><h3>Contact us</h3>
+                        <dl>
+                            <dd><span>Freephone:</span> +1 800 559 6580</dd>
+                            <dd><span>Telephone:</span> +1 800 603 6035</dd>
+                            <dd><span>Fax:</span> +1 800 889 9898</dd>
+                            <dd><span>Email:</span> <a href="constraction.html" style="color: #FFFFFF">sf@nutrition.com</a></dd>
+                        </dl>
+                    </td>
+                    <td><h3> Connect with us on social</h3>
+                        <img src="image/ikonki/f2.png"  name="f"
+                             onMouseOver="document.f.src='image/ikonki/f1.png'"
+                             onMouseOut="document.f.src='image/ikonki/f2.png'">
+                        <img src="image/ikonki/i2.png"  name="i"
+                             onMouseOver="document.i.src='image/ikonki/i1.png'"
+                             onMouseOut="document.i.src='image/ikonki/i2.png'">
+                        <img src="image/ikonki/t2.png"  name="t"
+                             onMouseOver="document.t.src='image/ikonki/t1.png'"
+                             onMouseOut="document.t.src='image/ikonki/t2.png'">
+                        <img src="image/ikonki/v2.png"  name="v"
+                             onMouseOver="document.v.src='image/ikonki/v1.png'"
+                             onMouseOut="document.v.src='image/ikonki/v2.png'">
+                        <img src="image/ikonki/y2.png"  name="y"
+                             onMouseOver="document.y.src='image/ikonki/y1.png'"
+                             onMouseOut="document.y.src='image/ikonki/y2.png'">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer__lists">
+            <div class="footer-payment-methods"><img src="image/payment_logos.png"></div>
+        </div>
+
+
+        <div class="footer__logo-link"><img src="image/logo1.png"></div>
+
+        <h3>"SuperFood Nutrition" Market</h3>
+        <p>  is a registered trademark of SuperFood Nutrition IP, L.P.</p>
+        <p>№307486. Working hours 9am-21pm. Sat/Sun - days off.</p>
+
+    </div>
+    <div class="footer3">
+        <div class="aligncenter"> <span>Copyright &copy; <a href="#">SuperFood Nutrition</a> All Rights Reserved</span> Design by <a target="_blank" href="constraction.html">shpilevskayam.com</a>
+            <div style="font-size: 20px; font-weight: bolder "> <p> <a href="policy.html">Privacy Notice</a>   |   <a href="conditions.html">Conditions of Use</a>   |   <a href="constraction.html">Supply Chain Disclosures</a>   |   <a href="constraction.html">Internet Based Ads</a></p></div>
+        </div>
+    </div>
+</body>
+</html>
